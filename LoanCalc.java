@@ -65,6 +65,7 @@ public class LoanCalc {
     	double L = loan / n;
     	double H = loan;
     	double payment = (L + H) / 2;
+    	iterationCounter = 0;
 
     	while ((H - L) > epsilon) {
     		if (endBalance(loan, rate, n, payment) > 0) {
